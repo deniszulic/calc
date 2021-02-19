@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="915.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projekt.calc">
+   <children>
+      <Pane layoutX="202.0" layoutY="262.0" prefHeight="182.0" prefWidth="523.0" style="-fx-background-color: #d9d9d9;">
+         <children>
+            <Text layoutX="58.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unesi r:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Button layoutX="132.0" layoutY="129.0" mnemonicParsing="false" onAction="#kugsektorvrij" prefHeight="47.0" prefWidth="244.0" style="-fx-background-color: #33ccff;" text="Izračunaj">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <TextField fx:id="vrija" layoutX="132.0" layoutY="14.0" onKeyPressed="#provjeraa" prefHeight="21.0" prefWidth="244.0" style="-fx-border-color: red;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="vrijb" layoutX="132.0" layoutY="75.0" onKeyPressed="#provjerab" prefHeight="25.0" prefWidth="244.0" style="-fx-border-color: red;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Text layoutX="57.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unesi h:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Button layoutX="751.0" layoutY="525.0" mnemonicParsing="false" onAction="#back" prefHeight="54.0" prefWidth="122.0" text="Natrag">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Pane layoutX="227.0" layoutY="456.0" prefHeight="54.0" prefWidth="421.0" style="-fx-background-color: #ccccff;">
+         <children>
+            <Text layoutX="20.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Obujam:">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
+            <Label fx:id="rez" layoutX="129.0" layoutY="9.0" prefHeight="38.0" prefWidth="279.0">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ToolBar prefHeight="47.0" prefWidth="915.0">
+         <items>
+            <Label text="Kuglin sektor">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+         </items>
+      </ToolBar>
+      <ImageView fitHeight="200.0" fitWidth="192.0" layoutX="362.0" layoutY="54.0">
+         <image>
+            <Image url="@images/spheresector.PNG" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

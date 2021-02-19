@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pocetni" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="915.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projekt.calc">
+   <children>
+      <ToolBar prefHeight="47.0" prefWidth="915.0">
+         <items>
+            <Label text="Kalkulator">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+         </items>
+      </ToolBar>
+      <Button layoutX="255.0" layoutY="440.0" mnemonicParsing="false" onAction="#volumen" prefHeight="69.0" prefWidth="175.0" style="-fx-background-color: #808080; -fx-text-fill: white;" text="Geometrijska tijela">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button layoutX="536.0" layoutY="440.0" mnemonicParsing="false" onAction="#fizika" prefHeight="69.0" prefWidth="175.0" style="-fx-background-color: #808080; -fx-text-fill: white;" text="Kalkulator za fiziku">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <ImageView fitHeight="312.0" fitWidth="406.0" layoutX="255.0" layoutY="69.0">
+         <image>
+            <Image url="@images/giphy.gif" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

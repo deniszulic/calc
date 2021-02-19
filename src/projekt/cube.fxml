@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="915.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projekt.calc">
+   <children>
+      <ImageView fitHeight="182.0" fitWidth="279.0" layoutX="318.0" layoutY="74.0">
+         <image>
+            <Image url="@images/13668-0-kocka-jpg-1533199421781.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="196.0" layoutY="273.0" prefHeight="141.0" prefWidth="523.0" style="-fx-background-color: #d9d9d9;">
+         <children>
+            <Text layoutX="29.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unesi a:">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
+            <Button layoutX="132.0" layoutY="80.0" mnemonicParsing="false" onAction="#kockavrij" prefHeight="47.0" prefWidth="244.0" style="-fx-background-color: #33ccff;" text="Izračunaj">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <TextField fx:id="vrija" layoutX="132.0" layoutY="14.0" onKeyPressed="#provjeraa" prefHeight="25.0" prefWidth="244.0" style="-fx-border-color: red;">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+      <Button layoutX="750.0" layoutY="508.0" mnemonicParsing="false" onAction="#back" prefHeight="54.0" prefWidth="122.0" text="Natrag">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Pane layoutX="196.0" layoutY="434.0" prefHeight="54.0" prefWidth="421.0" style="-fx-background-color: #ccccff;">
+         <children>
+            <Text layoutX="20.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Obujam:">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
+            <Label fx:id="rez" layoutX="124.0" layoutY="10.0" prefHeight="38.0" prefWidth="279.0">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ToolBar prefHeight="47.0" prefWidth="915.0">
+         <items>
+            <Label text="Kocka">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+         </items>
+      </ToolBar>
+      <Pane layoutX="196.0" layoutY="508.0" prefHeight="54.0" prefWidth="421.0" style="-fx-background-color: #ccccff;">
+         <children>
+            <Text layoutX="20.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Oplošje:">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
+            <Label fx:id="rezoplosje" layoutX="118.0" layoutY="11.0" prefHeight="38.0" prefWidth="279.0">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</Pane>
